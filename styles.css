@@ -13,3 +13,10 @@ p {
 .bgBlue{
     background-color: blue;
 }
+
+.negrita{
+    font-weight: bold;
+}
+.tGreen{
+    color: green;
+}
