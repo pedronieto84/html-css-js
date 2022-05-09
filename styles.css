@@ -4,12 +4,7 @@
               background-color: blue;
           }
     
-          h1 {
-              color: red;
-              text-align: center;
-          }
-    
-          p {
-              font-family: verdana;
-              font-size: 20px;
+          /* Ejemplo de una clase */
+          .rojo {
+              background-color:red
           }
