@@ -1,5 +1,5 @@
 
-                body {
+            body {
             background-color: blue;
             }
 
@@ -12,4 +12,16 @@
             font-family: verdana;
             font-size: 20px;
             }
+
+            .purple{
+                background-color:purple
+            }
+
+            .verde {
+                color:green
+            }
+            .cursiva {
+                font-family: Verdana, Geneva, Tahoma, sans-serif ;
+           }
+        
      
