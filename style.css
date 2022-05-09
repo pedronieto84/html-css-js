@@ -23,5 +23,10 @@
             /* Afectar estilos solo por ID */
             #encabezado{
                 background-color: green;
-                font-size: 120px;
+                font-size: 60px;
+            }
+            .multi{
+                background-color: aqua;
+                width: 60px;
+                border: 42px solid greenyellow;
             }
