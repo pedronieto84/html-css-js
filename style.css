@@ -26,10 +26,10 @@ p {
 }
 
 .Quadrat {
-    background-color: greenyellow;
+    background-color: green;
     width: 300px;
     border-color: red;
     border-style: solid;
     font-style: italic;
-    
+
 }
