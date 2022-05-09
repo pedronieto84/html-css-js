@@ -1,6 +1,6 @@
 
    body {
-         background-color: blue;
+         background-color: black;
          }
         
     h1 {
@@ -13,3 +13,6 @@
         font-size: 20px;
         }
              
+    .azul {
+        background-color: blue;
+    }
