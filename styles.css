@@ -1,6 +1,9 @@
 
           /* Ejemplo de como aplicar estilos mediante la id */
       
-          #encabezado{
-              background-color:red
+          .multiplesValores{
+              background-color:red;
+              width: 100px;
+              color: black;
+              border:  15px solid green;
           }
