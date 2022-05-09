@@ -23,5 +23,9 @@
             .cursiva {
                 font-family: Verdana, Geneva, Tahoma, sans-serif ;
            }
-        
-     
+
+           .multiplesValores {
+               background-color: red;
+               width: 10px;
+               color: blue;
+               }
