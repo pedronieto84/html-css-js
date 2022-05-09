@@ -24,3 +24,9 @@ p {
 #header1{
     background-color: blueviolet;
 }
+.multipleValues{
+    background-color: red;
+    width: 100px;
+    color: black;
+    border: 20px solid green;
+}
