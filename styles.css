@@ -12,3 +12,11 @@ p{
     font-family: verdana;
     font-size: 20px;
 }
+
+.rojo {
+    background-color: red;
+}
+
+.verde{
+    color: green;
+}
