@@ -21,3 +21,9 @@ body {
 
   #encabezado rojo {
     background-color: red;}
+
+    .multiplesValores {
+        background-color: blue;
+        color: white;
+        border: 10px solid greenyellow;
+    }
