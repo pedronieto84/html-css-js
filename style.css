@@ -18,3 +18,6 @@ body {
   .verde {
       color: green;
   }
+
+  #encabezado rojo {
+    background-color: red;}
