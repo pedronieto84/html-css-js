@@ -1,13 +1,6 @@
 
-          /* Ejemplo de como aplicar estilos globales a etiquetas html. */
-          body {
-              background-color: blue;
-          }
-    
-          /* Ejemplo de una clase */
-          .rojo {
+          /* Ejemplo de como aplicar estilos mediante la id */
+      
+          #encabezado{
               background-color:red
-          }
-          .verde{
-              color: green;
           }
