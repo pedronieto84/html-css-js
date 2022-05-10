@@ -1,8 +1,8 @@
 let soyElNulldeAbril = null
-console.log ('null', null)
+console.log ('null', soyElNulldeAbril)
 
-let soyelBooleanodeAbril = true
-console.log ('booleano', booleano)
+let soyelBooleanoDeAbril = true
+console.log ('booleano', soyelBooleanoDeAbril)
 
-let soyElUndefinedDeAbril = 'Hola'
-console.log ('undefined', undefined)
+let soyElUndefinedDeAbril = undefined
+console.log ('undefined', soyElUndefinedDeAbril)
