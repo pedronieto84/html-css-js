@@ -1,21 +1,12 @@
-// Ejemplo de un switch / case.
+// Bucle for que se va a ejecutar tantas veces como determine en la constante personas
 
-function mayoriaDeEdad( edad ){
-    switch (edad) {
 
-        case edad >= 65:
-            console.log('jubilado')
-            break;
+const personas = 20
 
-        case edad < 18:
-            console.log('menor de edad')
-            break;
-
-        default:
-            console.log('tengo edad de trabajar')
-            break;
-    }
+for (let index = 0;    index <= personas;      index ++) {
+    console.log('index', index)
 }
+
 
 
 
