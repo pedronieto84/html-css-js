@@ -1,24 +1,17 @@
-let soyElNulldeAbril = null
-console.log ('null', soyElNulldeAbril)
+function mayoriaDeEdad (edad){
 
-let soyelBooleanoDeAbril = true
-console.log ('booleano', soyelBooleanoDeAbril)
+    if (edad >=65){
+        console.log("tienes", edad,"años y","eres un jubilado")
+    }
+    else if (edad >= 18){
+        console.log ("tienes", edad,"años y","estas en edad de trabajar")
+    }
+    else {
+        console.log ("tienes", edad,"años y","eres menor de edad")
+    }
 
-let soyElUndefinedDeAbril = undefined
-console.log ('undefined', soyElUndefinedDeAbril)
-
-let soyElStringDeAbril = "Dime tu nombre"
-console.log ('string', soyElStringDeAbril)
-let soyElObjectDeAbril={
-    nombre: 'Abril',
-    apellido: 'Ramos'
 }
 
-console.log ('object', soyElObjectDeAbril)
-
-let soyElArrayDeAbril = ["cine","teatro","musica"]
-console.log ('array', soyElArrayDeAbril)
-
-function datosUsuario(registroUsuario){
-    console.log(registroUsuario)
-}
+mayoriaDeEdad (70)
+mayoriaDeEdad (35)
+mayoriaDeEdad (9)
