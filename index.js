@@ -32,4 +32,4 @@ console.log('object', soyUnObject)
 function loguearNombre(soyUnString){
     console.log('loguear', soyUnString)
 }
-console.log('funcion', funcion)
+console.log('funcion', loguearNombre)
