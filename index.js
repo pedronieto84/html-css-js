@@ -1,35 +1,11 @@
-let soyUnNull = null
-console.log('null', null)
+// FORMAS DE DEFINIR VARIABLES
 
-let soyUnUndefined = undefined
-console.log('undefined', soyUnUndefined)
+// LeT es para cuando esa variable puede cambiarse y solo afecta al scope de esa función
+let nombre = 'Pedro'
 
-let soyUnBooleano = false
-console.log('booleano', soyUnBooleano)
+// El const es para una variable que no se puede cambiar
+const dni = '234234324x'
 
-let soyUnNumero = 2
-console.log('numero', soyUnNumero)
+// El Var es para una variable que siempre se define en el scope global CONSEJO NO USARLA CASI NUNCA !!!!!!!
+var localidad = 'Terrassa'
 
-let soyUnString = 'HOla'
-console.log('string', soyUnString)
-
-let soyUnArray = ['ageOfEmpires', 'Civilization', 'HeartsOfIron']
-console.log('array', soyUnArray)
-
-let soyUnObject = {
-    stringDentroDeUnObject: 'Pedro',
-    numberDentroDeUnObject: 38,
-    booleanoDentroDeUnObject: true,
-    objectDentroDeUnObject: {
-        ciudad: 'Terrassa',
-        intereses: [
-            'leer', 'cine', 'viajar', {nombre: 'Luis'}, [1,2,3 ], soyUnString
-        ]
-    }
-}
-console.log('object', soyUnObject)
-
-function loguearNombre(soyUnString){
-    console.log('loguear', soyUnString)
-}
-console.log('funcion', loguearNombre)
