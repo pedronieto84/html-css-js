@@ -1,27 +1,10 @@
-let soyUnNullDeAlex = null;
-console.log(soyUnNullDeAlex);
 
-let soyUnBooleanoDeAlex = true;
-console.log(soyUnBooleanoDeAlex);
-
-let soyUnUndefinedDeAlex = undefined;
-console.log(soyUnUndefinedDeAlex);
-
-let soyUnStringDeAlex = "hola mundo";
-console.log(soyUnStringDeAlex);
-
-let soyUnObjectDeAlex = {
-    nombre: "Alexander",
-    cuellar: "Aguilar"
+function mayorDeEdad(edad) {
+    if( edad >= 65 ) console.log("Es un jubilado");
+    else if( edad > 18 ) console.log("Es mayor de edad");
+    else console.log("Es menor de edad");
 };
-console.log(soyUnObjectDeAlex);
 
-let soyUnArrayDeAlex = ["Discord","Steam","OperaGX"];
-console.log(soyUnArrayDeAlex);
-
-let soyUnNumber = 2022;
-console.log(soyUnNumber);
-
-function soyUnaFuncionDeAlex(string) {
-    console.log(string);
-};
+mayorDeEdad(12);
+mayorDeEdad(20);
+mayorDeEdad(80);
