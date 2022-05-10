@@ -1,14 +1,14 @@
-// Las funciones se pueden definir donde se quiera, porque javascript primero hace un barrido de toda la pagina
-// Busca las funciones, las entiende y despues, hace un segundo barrido donde ya va linea a linea.
+// Particularidades de LET
 
-let nombre = 'Pedro';
-
-
-
-
-loguearNombre()
+let nombre = "Pedro";
 
 function loguearNombre() {
-  nombre = "Luis";
-  console.log(nombre);
+  // Aquí defino un let que tiene el mismo nombre, pero no me da error porque solo vive en este scope local.
+
+  let nombre = "Luis";
+  console.log("nombre en el scope local", nombre);
 }
+
+loguearNombre();
+
+console.log("nombre en el scope global", nombre);
