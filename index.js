@@ -1,11 +1,23 @@
-// Typeof me sirve para ver que tipo de dato estoy recibiendo
+// Ejemplo de un switch / case.
 
 function mayoriaDeEdad( edad ){
-    console.log(typeof edad)
-    if(typeof edad === 'number'){
-        console.log('esto es un numero')
+    switch (edad) {
+
+        case edad >= 65:
+            console.log('jubilado')
+            break;
+
+        case edad < 18:
+            console.log('menor de edad')
+            break;
+
+        default:
+            console.log('tengo edad de trabajar')
+            break;
     }
 }
+
+
 
 
 
