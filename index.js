@@ -1,11 +1,14 @@
-// El signo de doble igual != . EVALUAR o COMPARAR lo contrario
+// El simbolo && se llama AND. Y compara
+
+// TRUE Y TRUE es TRUE
+// TRUE Y FALSE es FALSE
+// FALSE Y TRUE es FALSE
+// FALSE Y FALSE es FALSE
 
 
-const esDiferente =  ( 1 == '1' ) 
-console.log("es diferente?", esDiferente);
+const and =  ( true && false ) 
+console.log(and)
 
-const esCiertoTripleIgual = ( 1 !== '1' )
-// Simbolo de triple Igual es más estricto y me va a evaluar no solo el dato sino el tipo de dato
-console.log("es diferente? triple comparador", esCiertoTripleIgual);
+
 
 
