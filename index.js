@@ -1,15 +1,17 @@
-function funcEdad(edad){
-    if (edad >= 65){
-        console.log("es un jubilado")
-    }
-    else if (edad >=18){
-        console.log("está en edad de trabajar")
-    }
-    else if (isNaN(edad)==false){
-        console.log("es menor de edad")
-    }
-    else{
-        console.log("numero inválido")
-    }
+
+
+
+const people = 100
+
+for (let index = 0; index < people; index++){
+    ageFunction(index)
 }
-funcEdad("string")
+
+function ageFunction(age){
+    if (age >= 65)
+        console.log("retiree")
+    else if (age < 18)
+        console.log("minor")
+    else
+        console.log("working age")
+    }
