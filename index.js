@@ -1,14 +1,8 @@
-// Particularidades de LET
+// Particularidades de CONST. No puedo reasignar una variable definida como CONST.
 
-let nombre = "Pedro";
+const nombre = "Pedro"
 
-function loguearNombre() {
-  // Aquí defino un let que tiene el mismo nombre, pero no me da error porque solo vive en este scope local.
+// SI la reasigno, me va a dar el error Uncaught TypeError: Assignment to constant variable.
+nombre = 'Luis'
 
-  let nombre = "Luis";
-  console.log("nombre en el scope local", nombre);
-}
 
-loguearNombre();
-
-console.log("nombre en el scope global", nombre);
