@@ -1,13 +1,12 @@
-// El simbolo && se llama AND. Y compara
+// El simbolo || se llama OR. Y compara
 
-// TRUE Y TRUE es TRUE
-// TRUE Y FALSE es FALSE
-// FALSE Y TRUE es FALSE
-// FALSE Y FALSE es FALSE
+// TRUE || TRUE es TRUE
+// TRUE || FALSE es TRUE
+// FALSE || TRUE es TRUE
+// FALSE || FALSE es FALSE
 
-
-const and =  ( true && false ) 
-console.log(and)
+const or =  ( false || false ) 
+console.log(or);
 
 
 
