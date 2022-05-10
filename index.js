@@ -1,11 +1,13 @@
-// Estructuras condicionales if / else.
+// Typeof me sirve para ver que tipo de dato estoy recibiendo
 
-// '' es false
-// 0 y negativos son false
-// null es false
-// undefined es false
-// { } es true
-// [] es true
+function mayoriaDeEdad( edad ){
+    console.log(typeof edad)
+    if(typeof edad === 'number'){
+        console.log('esto es un numero')
+    }
+}
+
+
 
 
 
