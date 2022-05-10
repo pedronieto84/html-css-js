@@ -1,8 +1,13 @@
-// Particularidades de CONST. No puedo reasignar una variable definida como CONST.
+// El signo de doble igual == . EVALUAR o COMPARAR
 
-const nombre = "Pedro"
+// El parentesiss sirve para agrupar estructuras de logica.
+const esCierto =  ( 1 == '1' ) 
+console.log("es cierto", esCierto);
 
-// SI la reasigno, me va a dar el error Uncaught TypeError: Assignment to constant variable.
-nombre = 'Luis'
+const esCiertoTripleIgual = ( 1 === '1' )
+
+
+// Simbolo de triple Igual es más estricto y me va a evaluar no solo el dato sino el tipo de dato
+console.log("es cierto triple igual", esCiertoTripleIgual);
 
 
