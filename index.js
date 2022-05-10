@@ -29,3 +29,13 @@ console.log('array',soyElArrayDeMariana)
 function soyLaFuncionDeMariana (soyElStringDeMariana) {
     console.log ('funcion',soyElStringDeMariana)
 }
+
+function MayorDeEdad (edad) {
+    if (edad < 18) {
+    console.log('es menor de edad')}
+
+    else if (edad>=65) {
+    console.log('es jubilado') }
+    
+    else {console.log('estás en edad de currar')} 
+}
