@@ -1,31 +1,15 @@
-let nullDeMarcos = null
-console.log(nullDeMarcos)
-
-let undefinedDeMarcos = undefined
-console.log(undefinedDeMarcos)
-
-let booleanoDeMarcos = false
-console.log(booleanoDeMarcos)
-
-let stringDeMarcos = "muchotexto"
-console.log(stringDeMarcos)
-
-let numberDeMarcos = 42
-console.log(numberDeMarcos)
-
-let objectDeMarcos = {
-    nombre: "Marcos",
-    apellido: "Vázquez"
+function funcEdad(edad){
+    if (edad >= 65){
+        console.log("es un jubilado")
+    }
+    else if (edad >=18){
+        console.log("está en edad de trabajar")
+    }
+    else if (isNaN(edad)==false){
+        console.log("es menor de edad")
+    }
+    else{
+        console.log("numero inválido")
+    }
 }
-console.log(objectDeMarcos)
-
-let arrayDeMarcos = [
-    "PoE", "LoL", "FFXIV"
-]
-console.log(arrayDeMarcos)
-
-function functionDeMarcos() {
-    console.log(stringDeMarcos)
-}
-
-functionDeMarcos()
+funcEdad("string")
