@@ -7,7 +7,7 @@ function mayoriaDeEdad (edad){
         console.log ("tienes", edad,"años y","estas en edad de trabajar")
     }
     else {
-        console.log ("tienes", edad,"años y","eres menor de edad")
+        console.log ("tienes", edad,"años y","eres menor de edad. ¡NO PUEDES ENTRAR!")
     }
 
 }
