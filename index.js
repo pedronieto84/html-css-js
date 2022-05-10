@@ -1,12 +1,18 @@
-// El simbolo || se llama OR. Y compara
+// Estructuras condicionales if / else.
 
-// TRUE || TRUE es TRUE
-// TRUE || FALSE es TRUE
-// FALSE || TRUE es TRUE
-// FALSE || FALSE es FALSE
+function mayoriaDeEdad( edad ){
+    if (edad <= 18) {
+        console.log('eres menor de edad')
+    } else {
+        console.log('eres mayor de edad')
+    }
+}
 
-const or =  ( false || false ) 
-console.log(or);
+mayoriaDeEdad(17)
+mayoriaDeEdad(29)
+
+
+
 
 
 
