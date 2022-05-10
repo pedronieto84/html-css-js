@@ -1,15 +1,12 @@
-<html>
-  <head>
+let soyUnNull = null
+console.log('null', spyUnNull)
 
-   
-  </head>
-  <body>
+let soyUnUndefined = undefined
+console.log('undefined', soyUnUndefined)
 
-    <script>
-      let nombre = 'Luis'
-      console.log('nombre', nombre)
+let soyUnBooleano = true
+console.log('booleano', soyUnBooleano)
 
-    </script>
-    
-  </body>
-</html>
+let soyUnArray= ["victor", "Camacho",]
+console.log(soyUnArray, "victor", "Camacho")
+
