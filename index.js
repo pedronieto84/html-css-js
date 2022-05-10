@@ -1,42 +1,31 @@
 let nullDeMarcos = null
-console.log('null de Marcos', nullDeMarcos)
+console.log(nullDeMarcos)
 
 let undefinedDeMarcos = undefined
-console.log('undefined de Marcos', undefinedDeMarcos)
+console.log(undefinedDeMarcos)
 
 let booleanoDeMarcos = false
-console.log('booleano de Marcos', booleanoDeMarcos)
+console.log(booleanoDeMarcos)
 
-let usuarioTinder = {
+let stringDeMarcos = "muchotexto"
+console.log(stringDeMarcos)
+
+let numberDeMarcos = 42
+console.log(numberDeMarcos)
+
+let objectDeMarcos = {
     nombre: "Marcos",
-    edad: 21,
-    activo: true,
-    email: "emailgenerico@gmail.com"
+    apellido: "Vázquez"
+}
+console.log(objectDeMarcos)
+
+let arrayDeMarcos = [
+    "PoE", "LoL", "FFXIV"
+]
+console.log(arrayDeMarcos)
+
+function functionDeMarcos() {
+    console.log(stringDeMarcos)
 }
 
-// let soyUnNumero = 2
-// console.log('numero', soyUnNumero)
-
-// let soyUnString = 'HOla'
-// console.log('string', soyUnString)
-
-// let soyUnArray = ['ageOfEmpires', 'Civilization', 'HeartsOfIron']
-// console.log('array', soyUnArray)
-
-// let soyUnObject = {
-//     stringDentroDeUnObject: 'Pedro',
-//     numberDentroDeUnObject: 38,
-//     booleanoDentroDeUnObject: true,
-//     objectDentroDeUnObject: {
-//         ciudad: 'Terrassa',
-//         intereses: [
-//             'leer', 'cine', 'viajar', {nombre: 'Luis'}, [1,2,3 ], soyUnString
-//         ]
-//     }
-// }
-// console.log('object', soyUnObject)
-
-// function loguearNombre(soyUnString){
-//     console.log('loguear', soyUnString)
-// }
-// console.log('funcion', loguearNombre)
+functionDeMarcos()
