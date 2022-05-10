@@ -1,7 +1,7 @@
 
 
 let soyElNullDeMariana = null
-console.log('null', soyElNulldeMariana)
+console.log('null', soyElNullDeMariana)
 
 let soyElUndefinedDeMariana = undefined
 console.log('undefined', soyElUndefinedDeMariana)
