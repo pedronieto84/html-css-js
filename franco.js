@@ -1,30 +1,15 @@
-let soyElNullDeFranco = null
-console.log('null', soyElNullDeFranco)
-
-let soyElBooleanoDeFranco = true
-console.log('booleano',soyElBooleanoDeFranco)
-
-let soyElUndefinedDeFranco = undefined
-console.log('undefined',soyElUndefinedDeFranco)
-
-let soyElStringDeFranco = 'Hola'
-console.log('string',soyElStringDeFranco)
-
-let soyElObjectDeFranco ={
-    nombre: 'Franco',
-    apellido: 'Olano',
+function mayorEdad (edad){
+    if (edad >= 18 && edad < 65){
+        console.log('estas en edad de trabajar')
+    }
+    else if(edad >= 65){
+        console.log('eres un jubilado')
+    }
+    else{
+        console.log('eres menor')
+    }
 }
-console.log('objeto',soyElObjectDeFranco)
 
-let soyElArrayDeFranco = ['overwatch', 'GTA', 'CS:GO']
-console.log('array',soyElArrayDeFranco)
-
-function funcionDeFranco(){
-    nombre='Franco'
-    console.log('funcion',nombre)
-}
-funcionDeFranco() 
-
-
-let soyElNumeroDeFranco = 579
-console.log('numero',soyElNumeroDeFranco)
+mayorEdad(17)
+mayorEdad(30)
+mayorEdad(80)
