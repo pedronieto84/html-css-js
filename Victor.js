@@ -33,9 +33,12 @@
 // Y creamos una función que recibe como parámetros ese objeto.
 // Me tiene que devolver una array de strings con las claves de todas las propiedades.
 
-
-const arrayciudades = ["Madrid","Barcelona","Sevilla","Salamanca","Valencia"]
-
-function devolverPosicionDelArray(array, posicion){
-    return (array[posicion])
+const miUsuario = {
+    nombre:"Victor",
+    password:"Gomez",
+    email:"vjgomezrios@gmail.com",
 }
+let arr = Object.entries(miUsuario);
+console.log(miUsuario);
+    
+    
