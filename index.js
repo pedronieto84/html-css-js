@@ -7,7 +7,7 @@
 // Tercer parametro: numero
 const numero1 = 1
 const numero2 = 5
-const operacion = "pepemultiplicacion"
+const operacion = ""
 
 operacionMatematica (numero1,numero2,operacion)
 function operacionMatematica (numero1,numero2,operacion){
@@ -76,3 +76,11 @@ console.log("ciudad 3", ciudad3)
 // Definis un objeto usuario, que tenga email, password, y nombre. 
 // Y creamos una función que recibe como parámetros ese objeto.
 // Me tiene que devolver una array de strings con las claves de todas las propiedades.
+
+const myUser = {
+    Nombre:"Javi",
+    constraseña:"Javo",
+    email:"Javu",
+}
+let llamar = Object.entries(myUser);
+console.log(myUser);
