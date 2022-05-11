@@ -1,15 +1,43 @@
-function mayorEdad (edad){
-    if (edad >= 18 && edad < 65){
-        console.log('estas en edad de trabajar')
+// ejercicio 1 
+
+
+function operacionMatematica(operacion, n1, n2){
+    if (operacion === "suma"){
+        return (n1 + n2);
     }
-    else if(edad >= 65){
-        console.log('eres un jubilado')
+    else if (operacion === "resta"){
+        return (n1 - n2);
+    }
+    else if ((operacion === "multiplicacion") || ("multiplicación")){
+        return (n1 * n2);
+    }
+    else if (operacion === "division"){
+        return (n1 / n2);
     }
     else{
-        console.log('eres menor')
+        return("No existe la operacion")
     }
 }
 
-mayorEdad(17)
-mayorEdad(30)
-mayorEdad(80)
+operacionMatematica('suma', 4, 8)
+operacionMatematica('resta', 4, 8)
+operacionMatematica('multiplicacion', 4, 8)
+operacionMatematica('division', 4, 8)
+
+//ejercicio 2
+
+const ciudades = ["Madrid","Barcelona","Buenos Aires","Mar del Plata","Rosario"]
+
+function devolverPosicionArray(ciudades, indice){
+    return ciudades[indice]
+}
+devolverPosicionArray(ciudades, 3)
+
+const usuario = {
+    nombre: 'Franco',
+    contraseña: 'Hola1234',
+    email:'juancito123@gmail.com'
+}
+function clavesDeUsuarios (nombreUsuario){
+    return Object.keys(nombreUsuario)
+}
