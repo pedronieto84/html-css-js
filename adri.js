@@ -1,20 +1,22 @@
-/// Segundo Ejercicio
-
-// Crear un array con 5 ciudades (string).
-// Crear una función llamada devolver posicion del array que va a recibir los siguientes parametros
-
-
-// Primer parametro, el array de las ciudades
-// Segundo parametro, el indice
-
-// Me deve devolver el nombre de la ciudad que esta en esa posicion.
-const arrayCiudades = ["San Francisco", "Memphis", "Milwakee", "Boston"]
-let indice = 0
-devolverPosicion (arrayCiudades, indice)
-function devolverPosicion (arrayCiudades, indice){
-    while (indice<4) {
-        console.log(arrayCiudades[indice])
-        indice++
-        
-    }
-}
+const objetoAnidadoComplejo = {
+    user: {
+      email: {
+        item: [
+          {
+            email: "adfasdfas",
+            password: "adfasdfad",
+            item: [
+              "adfadfasdf",
+              12312312,
+              "adsfasdfad",
+              ["adsfasdf", [{ email: "pedro.nieto.sanchez@gmail.com" }]],
+            ],
+          },
+        ],
+      },
+    },
+  };
+  
+  const accederAlItem = objetoAnidadoComplejo.user.email.item[0].item[3][1][0]
+  console.log(accederAlItem)
+  
