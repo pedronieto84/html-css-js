@@ -48,11 +48,14 @@ let perfil = {
 }
 function obtenerClaves(objeto) {
     let claves = [];
-    for(let prop in objeto) {
-        claves.push(prop);
+    let valores = [];
+    for(let propiedad in objeto) {
+        claves.push(propiedad);
+        valores.push(objeto[propiedad]);
     };
 
-    return claves;
+    let resultado = [claves, valores];
+    return resultado;
 }
 
 // Ejemplo de uso:
