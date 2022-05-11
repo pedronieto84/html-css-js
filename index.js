@@ -1,32 +1,23 @@
-/// Primer ejercicio
+const objetoAnidadoComplejo = {
+  user: {
+    email: {
+      item: [
+        {
+          email: "adfasdfas",
+          password: "adfasdfad",
+          item: [
+            "adfadfasdf",
+            12312312,
+            "adsfasdfad",
+            ["adsfasdf", [{ email: "pedro.nieto.sanchez@gmail.com" }]],
+          ],
+        },
+      ],
+    },
+  },
+};
 
-// 1 Crear una función que se llame operacionMatematica. Que va a recibir como parámetros,
+// const accederAlItem = objetoAnidadoComplejo.user.console.log(objetoAnidadoComplejo.user.email.item.item[3]);
 
-// Primer parametro: 'suma', 'resta', 'multiplicacion', 'division'
-// Segundo parametro: numero
-// Tercer parametro: numero
 
-// Me tiene que devolver el resultado de la operación que le he indicado.
-
-// Si le paso un string, que no coincide con ('suma', 'resta', 'multiplicacion', 'division') me deve devolver el texto "Parametro erroneo"
-
-function operacionMatematica(operacion, num1, num2) {
-  if (operacion === "suma") {
-    return (num1 + num2);
-  } else {
-    if (operacion === "resta") {
-        return (num1 - num2)
-    } 
-    else {
-      if (operacion === "multiplicacion") {
-       return (num1*num2)
-      } 
-    else {
-        if (operacion === "division") {
-          return (num1 / num2)
-        }
-      }
-    }
-  }
-}
-console.log(operacionMatematica("division", 5, 4));
+console.log(objetoAnidadoComplejo.user.email.item[0].item[3][1][0].email)
