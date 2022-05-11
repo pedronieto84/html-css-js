@@ -7,7 +7,6 @@ const usuario = {
   loguearNombre() {
     return `${this.nombre} ${this.apellido}`;
   },
-  hijos: {
     nombre: "Carlos",
   },
 };
