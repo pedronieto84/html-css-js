@@ -13,7 +13,7 @@
 
 const numero1 =56
 const numero2 =85
-let operacion = suma
+let operacion 
 
 operacionMatematica()
 
