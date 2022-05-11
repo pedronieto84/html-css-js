@@ -1,19 +1,27 @@
-//// Segundo Ejercicio
+vconst operador = "suma"
+const numero1 = 2
+const numero2 = 3
+let resultado
 
-// Crear un array con 5 ciudades (string).
-// Crear una función llamada devolver posicion del array que va a recibir los siguientes parametros
-
-
-// Primer parametro, el array de las ciudades
-// Segundo parametro, el indice
-
-// Me deve devolver el nombre de la ciudad que esta en esa posicion.
-let arrayCiudades; ["San Francisco", "Memphis", "Milwakee", "Boston"]
-devolverPosicion (arrayCiudades)
-function devolverPosicion (arrayCiudades){
-    for (let index = 0; index < arrayCiudades; index++) {
-        console.log(arrayCiudades[index])
-        
+operacionMatematica(operador, numero1, numero2, resultado)
+function operacionMatematica (operador, numero1, numero2, resultado){
+    if (operador === "suma") {
+        resultado = numero1 + numero2
+        console.log(resultado)
+        return resultado;
+    }else if (operador === "resta") {
+        resultado = numero1 - numero2
+        console.log(resultado)
+        return resultado;
+    }else if (operador === "multiplicacion") {
+        resultado = numero1 * numero2
+        console.log(resultado)
+        return resultado;
+    }else if (operador === "dividision") {
+        resultado = numero1 / numero2
+        console.log(resultado)
+        return resultado;
+    }else {
+        return "ponme un operador valido tonto";
     }
-
-} 
+}
