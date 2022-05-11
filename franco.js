@@ -33,6 +33,8 @@ function devolverPosicionArray(ciudades, indice){
 }
 devolverPosicionArray(ciudades, 3)
 
+//ejercicio 3
+
 const usuario = {
     nombre: 'Franco',
     contraseña: 'Hola1234',
