@@ -46,10 +46,12 @@ console.log(operacionMatematica("multiplicación", 4, 2))
 
 const ciudades = ["Madrid","Barcelona","Sevilla","Toledo","Valencia"]
 
-function devolverPosicionArray(ciudades, [Index]){
-    return ciudades[Index]
+function devolverPosicionArray(ciudades, [index]){
+    return ciudades[index]
 }
 console.log(devolverPosicionArray(ciudades, [2]))
+
+// TODO añadir un return en caso de darse un index inválido
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
