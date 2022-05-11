@@ -1,11 +1,27 @@
-// Ternario es una forma de expresar un if else, si puedo expresar el resultado del if y el else en una unica linea
+// Objetos
 
-const edad = 21
+const usuario = {
+  nombre: "Pedro",
+  apellido: "Nieto",
+  edad: 38,
+  loguearNombre() {
+    return `${this.nombre} ${this.apellido}`;
+  },
+  hijos: {
+    nombre: "Carlos",
+  },
+};
+// El this me sirve para acceder a una propiedad de mi mismo objeto.
 
-const soyMayorDeEdad =  ( edad > 18 ) ? 'si' : 'no';
-console.log('soy mayor de edad', soyMayorDeEdad )
+// El punto me sirve para acceder a las propiedades de un objeto.
+console.log("nombre", usuario.nombre);
 
+// Para acceder al apellido
+console.log("apellido", usuario.apellido);
 
-const estoyEnEdadDeTrabajar = (  ( edad > 18 ) && (edad < 66 ) ) ? 'si' : 'no'
-console.log("estoy en edad de trabajar", estoyEnEdadDeTrabajar)
+// Para acceder a la propiedad de un objeto anidado
+console.log("nombre del hijo", usuario.hijos.nombre);
 
+// Llamar a una función que hay dentro de un objeto
+const nombre = usuario.loguearNombre();
+console.log("nombre mio", nombre);
