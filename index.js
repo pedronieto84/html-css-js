@@ -59,9 +59,15 @@ console.log(devolverPosicionArray(ciudades, [2]))
 // Y creamos una función que recibe como parámetros ese objeto.
 // Me tiene que devolver una array de strings con las claves de todas las propiedades.
 
-// const usuario = {
-//     email:
-//     password:
-//     nombre:
-// }
+const usuario = {
+    email: 'adsfsadf',
+    password: 'asdfsadf',
+    nombre: 'asdfasfsadf'
+};
+
+function arrayFunction(usuario) {
+    return Object.keys(usuario)
+}
+
+console.log(arrayFunction(usuario))
 
