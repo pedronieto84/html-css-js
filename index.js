@@ -1,41 +1,37 @@
-// Arrays o Matrices o Arreglos
+// Primer ejercicio
 
-const arrayCiudades = [ 'Barcelona', 'Madrid', 'Sevilla']
+// 1 Crear una función que se llame operacionMatematica. Que va a recibir como parámetros,
 
-const primeraCiudadDelArray = arrayCiudades[0]
-console.log("primera ciudad", primeraCiudadDelArray);
+// Primer parametro: 'suma', 'resta', 'multiplicacion', 'division' 
+// Segundo parametro: numero
+// Tercer parametro: numero
 
-const nombre = ''
-// Array anidada dentro de un objeto
-const miUsuario = {
-    nombre , email, password, arrayDeGenteQueMeGusta: ['1', '56', '234324']
-}
+// Me tiene que devolver el resultado de la operación que le he indicado.
+
+// Si le paso un string, que no coincide con ('suma', 'resta', 'multiplicacion', 'division') me deve devolver el texto "Parametro erroneo"
 
 
-// Ejemplo de como acceder a un elemento de un array que está anidado dentro de un objeto.
-function elqueMeGustaMasAntiguo(){
-    return miUsuario.arrayDeGenteQueMeGusta[0]
-}
+////////////////////////////////////////////////////////////////////////////////////
 
-// Como acceder a array de objetos de un objeto
 
-const usuarioMasComplejo = {
-  nombre,
-  email,
-  password,
-  arrayDeGenteQueMeGusta: [
-    { nombre, id: "adfsadf" },
-    { nombre, id: "adfsadf" },
-    { nombre, id: "adfsadf" },
-  ],
-};
+//// Segundo Ejercicio
 
-// Acceder a un objeto dentro de un array
-const accederAlaIdDelUsuarioMasAntiguo = usuarioMasComplejo.arrayDeGenteQueMeGusta[0].id
-console.log(
-  "acceder a la id del usuario mas antiguo",
-  accederAlaIdDelUsuarioMasAntiguo
-);
+// Crear un array con 5 ciudades (string).
+// Crear una función llamada devolver posicion del array que va a recibir los siguientes parametros
+
+
+// Primer parametro, el array de las ciudades
+// Segundo parametro, el indice
+
+// Me deve devolver el nombre de la ciudad que esta en esa posicion.
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+//// Tercer Ejercicio
+
+// Definis un objeto usuario, que tenga email, password, y nombre. 
+// Y creamos una función que recibe como parámetros ese objeto.
+// Me tiene que devolver una array de strings con las claves de todas las propiedades.
 
 
 
