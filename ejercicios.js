@@ -18,16 +18,16 @@ let operacion = suma
 operacionMatematica()
 
 function operacionMatematica (numero1,numero2,operacion){
-if (operacion == "suma"){
+if (operacion === "suma"){
     const resultado= numero1 + numero2
     return resultado
-}else if (operacion == "resta"){
+}else if (operacion === "resta"){
     const resultado= numero1 - numero2
 return resultado
-} else if (operacion == "multiplicacio"){
+} else if (operacion === "multiplicacio"){
     const resultado= numero1 * numero2
     return resultado
-} else if (operacion == "divisio") {
+} else if (operacion === "divisio") {
     const resultado= numero1 / numero2
     return resultado
 }else{
@@ -81,6 +81,5 @@ posicionarray()
 ejercicio3()
  function ejercicio3 (usuario){
     for (let index = 0; index > usuario.length; index++) {
-    
     }
 }
