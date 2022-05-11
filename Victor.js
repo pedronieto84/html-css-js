@@ -34,22 +34,8 @@
 // Me tiene que devolver una array de strings con las claves de todas las propiedades.
 
 
-function operacionMatematica (operacion, n1, n2){
-    if (operacion === "suma"){
-        return (n1+n2) 
-    }
-    else if (operacion === "resta") {
-        return (n1-n2)
-    }
-    else if (operacion === "multiplicar"){
-        return (n1*n2)
-    }
-    else if (operacion === "dividir"){
-        return (n1/n2)
-    }
-    else {
-        console.log("Parametro erroneo")
-    }
-}
+const arrayciudades = ["Madrid","Barcelona","Sevilla","Salamanca","Valencia"]
 
-operacionMatematica ("suma", 2, 4)
+function devolverPosicionDelArray(array, posicion){
+    return (array[posicion])
+}
