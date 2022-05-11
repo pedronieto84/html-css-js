@@ -1,27 +1,41 @@
-// Objetos
+// Arrays o Matrices o Arreglos
 
-const usuario = {
-  nombre: "Pedro",
-  apellido: "Nieto",
-  edad: 38,
-  loguearNombre() {
-    return `${this.nombre} ${this.apellido}`;
-  },
-  hijos: {
-    nombre: "Carlos",
-  },
+const arrayCiudades = [ 'Barcelona', 'Madrid', 'Sevilla']
+
+const primeraCiudadDelArray = arrayCiudades[0]
+console.log("primera ciudad", primeraCiudadDelArray);
+
+const nombre = ''
+// Array anidada dentro de un objeto
+const miUsuario = {
+    nombre , email, password, arrayDeGenteQueMeGusta: ['1', '56', '234324']
+}
+
+
+// Ejemplo de como acceder a un elemento de un array que está anidado dentro de un objeto.
+function elqueMeGustaMasAntiguo(){
+    return miUsuario.arrayDeGenteQueMeGusta[0]
+}
+
+// Como acceder a array de objetos de un objeto
+
+const usuarioMasComplejo = {
+  nombre,
+  email,
+  password,
+  arrayDeGenteQueMeGusta: [
+    { nombre, id: "adfsadf" },
+    { nombre, id: "adfsadf" },
+    { nombre, id: "adfsadf" },
+  ],
 };
-// El this me sirve para acceder a una propiedad de mi mismo objeto.
 
-// El punto me sirve para acceder a las propiedades de un objeto.
-console.log("nombre", usuario.nombre);
+// Acceder a un objeto dentro de un array
+const accederAlaIdDelUsuarioMasAntiguo = usuarioMasComplejo.arrayDeGenteQueMeGusta[0].id
+console.log(
+  "acceder a la id del usuario mas antiguo",
+  accederAlaIdDelUsuarioMasAntiguo
+);
 
-// Para acceder al apellido
-console.log("apellido", usuario.apellido);
 
-// Para acceder a la propiedad de un objeto anidado
-console.log("nombre del hijo", usuario.hijos.nombre);
 
-// Llamar a una función que hay dentro de un objeto
-const nombre = usuario.loguearNombre();
-console.log("nombre mio", nombre);
