@@ -17,6 +17,6 @@ const objetoAnidadoComplejo = {
     },
   };
   
-  const accederAlItem = objetoAnidadoComplejo.user.email.item[0].item[3][1][0]
+  const accederAlItem = objetoAnidadoComplejo.user.email.item[0].item[3][1][0].email
   console.log(accederAlItem)
   
