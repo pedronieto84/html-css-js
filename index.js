@@ -58,3 +58,11 @@ console.log('tercera ciudad', devolverPosicionDelArray)}
 // Y creamos una función que recibe como parámetros ese objeto.
 // Me tiene que devolver una array de strings con las claves de todas las propiedades.
 
+const miUsuario = {
+    nombre: 'Victoria',
+    password:'Schwint',
+    email:'vicky.schwint@gmail.com',
+}
+
+let arr = Object.entries(miUsuario);
+console.log(miUsuario);
