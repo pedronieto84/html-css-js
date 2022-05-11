@@ -1,18 +1,18 @@
 // ejercicio 1 
 
 
-function operacionMatematica(operacion, n1, n2){
+function operacionMatematica(operacion, numero1, numero2){
     if (operacion === "suma"){
-        return (n1 + n2);
+        return (numero1 + numero2);
     }
     else if (operacion === "resta"){
-        return (n1 - n2);
+        return (numero1 - numero2);
     }
-    else if ((operacion === "multiplicacion") || ("multiplicación")){
-        return (n1 * n2);
+    else if ((operacion === "multiplicacion")){
+        return (numero1 * numero2);
     }
     else if (operacion === "division"){
-        return (n1 / n2);
+        return (numero1 / numero2);
     }
     else{
         return("No existe la operacion")
@@ -23,6 +23,7 @@ operacionMatematica('suma', 4, 8)
 operacionMatematica('resta', 4, 8)
 operacionMatematica('multiplicacion', 4, 8)
 operacionMatematica('division', 4, 8)
+operacionMatematica('hola', 4, 8)
 
 //ejercicio 2
 
