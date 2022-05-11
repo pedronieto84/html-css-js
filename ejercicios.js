@@ -81,5 +81,8 @@ posicionarray()
 ejercicio3()
  function ejercicio3 (usuario){
     for (let index = 0; index > usuario.length; index++) {
+        let clave = Object.key(usuario);
     }
 }
+
+console.log(clave);
