@@ -1,18 +1,32 @@
+/// Primer ejercicio
 
+// 1 Crear una función que se llame operacionMatematica. Que va a recibir como parámetros,
 
-//// Segundo Ejercicio
+// Primer parametro: 'suma', 'resta', 'multiplicacion', 'division'
+// Segundo parametro: numero
+// Tercer parametro: numero
 
-// Crear un array con 5 ciudades (string).
-// Crear una función llamada devolver posicion del array que va a recibir los siguientes parametros
+// Me tiene que devolver el resultado de la operación que le he indicado.
 
-// Primer parametro, el array de las ciudades
-// Segundo parametro, el indice
+// Si le paso un string, que no coincide con ('suma', 'resta', 'multiplicacion', 'division') me deve devolver el texto "Parametro erroneo"
 
-// Me deve devolver el nombre de la ciudad que esta en esa posicion.
-
-const ciudades = ['Cordoba', 'Vigo', 'Barcelona', 'Madrid', 'Valencia']
-
-function devolverPosicionDelArray (indice) {
-    console.log('Nombre de la ciudad:',ciudades[indice])
+function operacionMatematica(operacion, num1, num2) {
+  if (operacion === "suma") {
+    return (num1 + num2);
+  } else {
+    if (operacion === "resta") {
+        return (num1 - num2)
+    } 
+    else {
+      if (operacion === "multiplicacion") {
+       return (num1*num2)
+      } 
+    else {
+        if (operacion === "division") {
+          return (num1 / num2)
+        }
+      }
+    }
+  }
 }
-devolverPosicionDelArray (2)
+console.log(operacionMatematica("division", 5, 4));
