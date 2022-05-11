@@ -5,14 +5,32 @@
 // Primer parametro: 'suma', 'resta', 'multiplicacion', 'division' 
 // Segundo parametro: numero
 // Tercer parametro: numero
+const numero1 = 1
+const numero2 = 5
+const operacion = "pepemultiplicacion"
 
-const operacion = ""
-console.log("suma", suma)
+operacionMatematica (numero1,numero2,operacion)
+function operacionMatematica (numero1,numero2,operacion){
+    if (operacion === "suma"){
+        console.log("resultado", numero1 + numero2)
+        return numero1 + numero2;
+    }else if (operacion === "resta") {
+        console.log("resultado", numero1 - numero2)
+        return numero1 - numero2;
+    }else if (operacion === "multiplicacion") {
+        console.log("resultado", numero1 * numero2)
+        return numero1 * numero2;
+    }else if (operacion === "division") {
+        console.log("resultado", numero1 / numero2)
+        return numero1 / numero2;
+    }else {
+        console.log("operador no valido")
+        return;
+    }
+}
 
-const numero1 = 10 + suma
-console.log("Resultado suma", numero1)
-const numero2 = 5 * suma
-console.log("Resultado multi", numero2)
+
+
 
 
 
