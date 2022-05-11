@@ -1,28 +1,14 @@
-// Operaciones matematicas
+// Juntar strings, o "string interpolation"
 
+const nombre = "Pedro";
+const apellidoPaterno = "Nieto";
+const apellidoMaterno = "Sanchez";
 
-const suma = 2 + 3
-console.log('suma', suma )
+// Forma anterior
 
-const resta = 3 - 2
-console.log("resta", resta );
+const nombreCompleto = nombre + " " + apellidoPaterno + " " + apellidoMaterno;
+console.log("concatenar strings", nombreCompleto);
 
-const multiplicacion = 3 * 3
-console.log( 'multiplicacion', multiplicacion );
-
-const dividir = 3 / 3
-console.log( 'dividir', dividir )
-
-const modulus = 5 % 3
-console.log('modulus', modulus )
-
-const combinando  = ( 5 * 3 ) / 2
-console.log('combinando', combinando )
-
-
-
-
-
-
-
-
+// Forma nueva de concatenar stringa
+const nombreCompletoFormaNueva = `${nombre} ${apellidoPaterno} ${apellidoMaterno}`;
+console.log("concatenar strings forma moderna", nombreCompletoFormaNueva);
