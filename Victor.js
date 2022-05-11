@@ -1,13 +1,55 @@
-function edadCompleta (edad){
-    if (edad<=18){
-        console.log("es menor de edad")
-    } else if( edad>=65) {
-        console.log("esta jubilado")
-    } else {
-        console.log("Edad para trabajar")
+// Primer ejercicio
+
+// 1 Crear una función que se llame operacionMatematica. Que va a recibir como parámetros,
+
+// Primer parametro: 'suma', 'resta', 'multiplicacion', 'division' 
+// Segundo parametro: numero
+// Tercer parametro: numero
+
+// Me tiene que devolver el resultado de la operación que le he indicado.
+
+// Si le paso un string, que no coincide con ('suma', 'resta', 'multiplicacion', 'division') me deve devolver el texto "Parametro erroneo"
+
+
+////////////////////////////////////////////////////////////////////////////////////
+
+
+//// Segundo Ejercicio
+
+// Crear un array con 5 ciudades (string).
+// Crear una función llamada devolver posicion del array que va a recibir los siguientes parametros
+
+
+// Primer parametro, el array de las ciudades
+// Segundo parametro, el indice
+
+// Me deve devolver el nombre de la ciudad que esta en esa posicion.
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+//// Tercer Ejercicio
+
+// Definis un objeto usuario, que tenga email, password, y nombre. 
+// Y creamos una función que recibe como parámetros ese objeto.
+// Me tiene que devolver una array de strings con las claves de todas las propiedades.
+
+
+function operacionMatematica (operacion, n1, n2){
+    if (operacion === "suma"){
+        return (n1+n2) 
+    }
+    else if (operacion === "resta") {
+        return (n1-n2)
+    }
+    else if (operacion === "multiplicar"){
+        return (n1*n2)
+    }
+    else if (operacion === "dividir"){
+        return (n1/n2)
+    }
+    else {
+        console.log("Parametro erroneo")
     }
 }
 
-edadCompleta(50)
-edadCompleta(70)
-edadCompleta(16)
+operacionMatematica ("suma", 2, 4)
