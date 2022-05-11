@@ -1,25 +1,20 @@
-function OperacionMatematica(operación, numero1, numero2){
-    if (operación==="suma") {
-        return (numero1+numero2)
-    }
-    else if (operación==="resta") {
-        return (numero1-numero2)
-    }
-    else if (operación==="multiplicación") {
-        return (numero1*numero2)
-    }
-    else if (operación==="división") {
-        return (numero1/numero2)
-    }
-    else{
-        return ("No se ha indicado la operación")
-    }
-}
-const numero1 = 10
-const numero2 = 5
+//// Segundo Ejercicio
 
-console.log ("Resultado de la suma:", OperacionMatematica("suma", numero1, numero2))
-console.log ("Resultado de la resta:", OperacionMatematica("resta", numero1, numero2))
-console.log ("Resultado de la multiplicación:", OperacionMatematica("multiplicación", numero1, numero2))
-console.log ("Resultado de la división:", OperacionMatematica("división", numero1, numero2))
-console.log ("Resultado de la operación:", OperacionMatematica(numero1, numero2))
+// Crear un array con 5 ciudades (string).
+// Crear una función llamada devolver posicion del array que va a recibir los siguientes parametros
+
+
+// Primer parametro, el array de las ciudades
+// Segundo parametro, el indice
+
+// Me deve devolver el nombre de la ciudad que esta en esa posicion.
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+const ArrayCiudades = ["Barcelona", "Budapest","Paris", "Praga", "Dublin"]
+
+function devolverPosicionDelArray (Array, indice){
+    return Array [indice]
+}
+
+console.log (devolverPosicionDelArray (ArrayCiudades, 0))
