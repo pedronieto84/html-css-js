@@ -1,14 +1,24 @@
-// El return además de finalizar la ejecución de esa función si le añado algun dato me lo devuelve hacia afuera.
+// Operaciones matematicas
 
 
-const edadQueSaleDeLaFuncion = mayoriaDeEdad(19);
-console.log(  "edad que sale de la funcion mediante un return", edadQueSaleDeLaFuncion);
+const suma = 2 + 3
+console.log('suma', suma )
 
+const resta = 3 - 2
+console.log("resta", resta );
 
+const multiplicacion = 3 * 3
+console.log( 'multiplicacion', multiplicacion );
 
-function mayoriaDeEdad(edad) {
-  return edad;
-}
+const dividir = 3 / 3
+console.log( 'dividir', dividir )
+
+const modulus = 5 % 3
+console.log('modulus', modulus )
+
+const combinando  = ( 5 * 3 ) / 2
+console.log('combinando', combinando )
+
 
 
 
