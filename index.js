@@ -1,41 +1,18 @@
 
 
-let soyElNullDeMariana = null
-console.log('null', soyElNullDeMariana)
+//// Segundo Ejercicio
 
-let soyElUndefinedDeMariana = undefined
-console.log('undefined', soyElUndefinedDeMariana)
+// Crear un array con 5 ciudades (string).
+// Crear una función llamada devolver posicion del array que va a recibir los siguientes parametros
 
-let soyElBooleanDeMariana = false
-console.log('booleano',soyElBooleanDeMariana)
+// Primer parametro, el array de las ciudades
+// Segundo parametro, el indice
 
-let soyElNumberDeMariana = 3
-console.log ('numero', soyElNumberDeMariana)
+// Me deve devolver el nombre de la ciudad que esta en esa posicion.
 
-let soyElStringDeMariana = 'String de Mariana'
-console.log('string', soyElStringDeMariana)
+const ciudades = ['Cordoba', 'Vigo', 'Barcelona', 'Madrid', 'Valencia']
 
-let soyElObjectDeMariana = 
-{
-    nombre: 'Mariana',
-    apellido: 'Lopez',
-
+function devolverPosicionDelArray (indice) {
+    console.log('Nombre de la ciudad:',ciudades[indice])
 }
-console.log('objeto', soyElObjectDeMariana)
-
-let soyElArrayDeMariana= ['buble','saboteur','truco']
-console.log('array',soyElArrayDeMariana)
-
-function soyLaFuncionDeMariana (soyElStringDeMariana) {
-    console.log ('funcion',soyElStringDeMariana)
-}
-
-function MayorDeEdad (edad) {
-    if (edad < 18) {
-    console.log('es menor de edad')}
-
-    else if (edad>=65) {
-    console.log('es jubilado') }
-    
-    else {console.log('estás en edad de currar')} 
-}
+devolverPosicionDelArray (2)
