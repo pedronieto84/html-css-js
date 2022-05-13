@@ -1,7 +1,7 @@
 {
   "name": "curscambra",
   "version": "1.0.0",
-  "environment": 16.15.0,
+  "environment": "16.15.0",
   "description": "curso de la cambra de comerç de javascript",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/pedronieto84/html-css-js/issues"
   },
-  "homepage": "https://github.com/pedronieto84/html-css-js#readme"
+  "homepage": "https://github.com/pedronieto84/html-css-js#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
