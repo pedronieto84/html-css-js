@@ -1,28 +1,32 @@
-// Objetos
+const express = require('express')
+const app = express()
+const port = 3000
 
-const usuario = {
-  nombre: "Pedro",
-  apellido: "Nieto",
-  edad: 38,
-  loguearNombre() {
-    return `${this.nombre} ${this.apellido}`;
-  },
-    nombre: "Carlos",
-  },
-};
-// El this me sirve para acceder a una propiedad de mi mismo objeto.
+app.get('/', (req, res) => {
+  res.send('Qué pasa chavales, soy un hacker!')
+})
 
-// El punto me sirve para acceder a las propiedades de un objeto.
-console.log("nombre", usuario.nombre);
+app.get('/adiosmundo', (req, res) => {
+    res.send('Adiós mundo cruel')
+  })
 
-// Para acceder al apellido
-console.log("apellido", usuario.apellido);
+  app.get('/lunes', (req, res) => {
+    res.send('lunes triste')
+  })
+  app.get('/martes', (req, res) => {
+    res.send('martesicooo')
+  })
+  app.get('/miercoles', (req, res) => {
+    res.send('miercolessss')
+  })
+  app.get('/jueves', (req, res) => {
+    res.send('juerneeesss')
+  })
+  app.get('/viernes', (req, res) => {
+    res.send('que ya es viernes locoo')
+  })
 
-// Para acceder a la propiedad de un objeto anidado
-console.log("nombre del hijo", usuario.hijos.nombre);
-
-// Llamar a una función que hay dentro de un objeto
-const nombre = usuario.loguearNombre();
-console.log("nombre mio", nombre);
-
-// 
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+;
