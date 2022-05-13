@@ -1,21 +1,27 @@
-const objetoAnidadoComplejo = {
-    user: {
-      email: {
-        item: [
-          {
-            email: "adfasdfas",
-            password: "adfasdfad",
-            item: [
-              "adfadfasdf",
-              12312312,
-              "adsfasdfad",
-              ["adsfasdf", [{ email: "pedro.nieto.sanchez@gmail.com" }]],
-            ],
-          },
-        ],
-      },
-    },
-  };
-  
-  const accederAlItem = objetoAnidadoComplejo.user.email.item[0].item[3][1][0].email
-        console.log(accederAlItem);
+const express = require('express')
+const app = express()
+const port = 5000
+
+app.get('/', (req, res) => {
+  res.send('Hola Mundo!')
+})
+
+app.get('/lunes', (req, res) => {
+  res.send('Hoy es lunes!')
+})
+app.get('/martes', (req, res) => {
+  res.send('Hoy es martes!')
+})
+app.get('/miercoles', (req, res) => {
+  res.send('Hoy es miercoles!')
+})
+app.get('/jueves', (req, res) => {
+  res.send('Hoy es jueves!')
+})
+app.get('/viernes', (req, res) => {
+  res.send('Hoy es viernes!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
