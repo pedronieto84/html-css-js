@@ -16,8 +16,5 @@ const objetoAnidadoComplejo = {
     },
   },
 };
-
 // const accederAlItem = objetoAnidadoComplejo.user.console.log(objetoAnidadoComplejo.user.email.item.item[3]);
-
-
-console.log(objetoAnidadoComplejo.user.email.item[0].item[3][1][0].email)
+console.log(objetoAnidadoComplejo.user.email.item[0][0].item[3][1][0].email)

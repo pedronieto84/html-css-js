@@ -1,0 +1,25 @@
+{
+  "name": "curs-cambra",
+  "version": "1.0.0",
+  "description": "Curso de la cambra de JS",
+  "main": "index.js",
+  "environment": {
+    "node": "16.15.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedronieto84/html-css-js.git"
+  },
+  "author": "Mariana Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedronieto84/html-css-js/issues"
+  },
+  "homepage": "https://github.com/pedronieto84/html-css-js#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
