@@ -1,0 +1,25 @@
+{
+  "name": "curs-cambra",
+  "version": "1.0.0",
+  "environment": {
+    "node": "16.15.0"
+  },
+  "description": "curso de la cambra de javascript",
+  "main": "Victor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedronieto84/html-css-js.git"
+  },
+  "author": "VictorJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedronieto84/html-css-js/issues"
+  },
+  "homepage": "https://github.com/pedronieto84/html-css-js#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
