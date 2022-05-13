@@ -1,10 +1,11 @@
-let hola = "ok";
+const express = require('express');
+const app = express();
+const port = 3000;
 
-function test() {
-  let hola = "test";
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
 
-  console.log(hola);
-  console.log(globalThis.hola);
-}
-
-test();
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
