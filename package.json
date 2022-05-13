@@ -1,0 +1,25 @@
+{
+  "name": "franco",
+  "version": "1.0.0",
+  "environment": {
+    "node": "16.15.0"
+  },
+  "description": "cuso de la cambra js, css, html",
+  "main": "franco.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedronieto84/html-css-js.git"
+  },
+  "author": "Franco Olano Melo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedronieto84/html-css-js/issues"
+  },
+  "homepage": "https://github.com/pedronieto84/html-css-js#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
