@@ -1,20 +1,15 @@
-const objetoAnidadoComplejo = {
-  user: {
-    email: {
-      item: [
-        {
-          email: "adfasdfas",
-          password: "adfasdfad",
-          item: [
-            "adfadfasdf",
-            12312312,
-            "adsfasdfad",
-            ["adsfasdf", [{ email: "pedro.nieto.sanchez@gmail.com" }]],
-          ],
-        },
-      ],
-    },
-  },
-};
+const express = require("express");
+const app = express();
+const port = 3000;
 
-const accederAlItem = objetoAnidadoComplejo.user.console.log(first);
+app.get("/", (req, res) => {
+  res.send("Hello asdfsadfWorld!");
+});
+
+app.get("/adios-mundo", (req, res) => {
+  res.send("<h1>hola mundo</h1>");
+});
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
