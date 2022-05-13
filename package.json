@@ -1,0 +1,22 @@
+{
+  "name": "curs-cambra",
+  "version": "1.0.0",
+  "environment": {
+    "node": "16.15.0"
+  },
+  "description": "Curso de la cambra de comerç de Javascript html y css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedronieto84/html-css-js.git"
+  },
+  "author": "Pedro Nieto Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedronieto84/html-css-js/issues"
+  },
+  "homepage": "https://github.com/pedronieto84/html-css-js#readme"
+}
