@@ -1,0 +1,19 @@
+{
+  "name": "alex-web",
+  "version": "1.0.0",
+  "description": "mi página web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedronieto84/html-css-js.git"
+  },
+  "author": "Alexander Cuellar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedronieto84/html-css-js/issues"
+  },
+  "homepage": "https://github.com/pedronieto84/html-css-js#readme"
+}
