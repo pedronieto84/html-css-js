@@ -1,8 +1,9 @@
 {
   "name": "curso",
   "version": "1.0.0",
-  "environment":{
+  "environment" :{
     "node":"16.15.0"
+
   },
   "description": "curso de cambra de comercio",
   "main": "index.js",
