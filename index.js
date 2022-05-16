@@ -1,49 +1,51 @@
+// BOILERPLATE PARA FIREBASE-ADMIN
+// Importo la libreria de firebase-admin
+let admin = require("firebase-admin");
 
-// En la primera linea cargo toda la libreria de Express
-const express = require("express");
+// Importo las contraseñas y las credenciales
+var passwords = require("./../cert.json");
 
-// Creas una instancia de la clase Express
+// Inicializo el admin y para eso tengo que pasarle un objeto con las credenciales.
+admin.initializeApp({ credential: admin.credential.cert(passwords) });
+
+// Meto en la constante db todo lo relativo a la base de datos
+const db = admin.firestore();
+
+// BOILERPLATE PARA EXPRESS 
+// Importo express
+const express = require("express")
+// Instancio express
 const app = express();
-
-// Cargo la base de datos 
-const Datastore = require('nedb')
-
-// Inicializo la base de datos y le defino la ruta donde voy a guardar los datos
-const db = new Datastore({ filename: __dirname + '/data/example.dat', autoload: true});
-
 // Me lo cargas en el puerto 3000
 const port = 3000;
 
 // Todo lo que me estés cargando
-app.use( express.json() )
+app.use(express.json());
 
-// Definicion de una ruta de tipo POST. (Me sirve para crear un registro en la base de datos)
-app.post('/alta-usuario', ( req, res ) => {
-  console.log('usuario', req.body)
-
-  // Cojo el dato que me han enviado
-  const documentoAInsertar = req.body
-
-  // Lo inserto en la base de datos
-  db.insert(documentoAInsertar, function (err, newDoc) {   
-    console.log('exito', newDoc)
-  });
-  res.send(req.body)
-})
 
 // Ejemplo de una ruta GET, que me sirve para cargar los datos.
-app.get('/alta-usuario', (req,res)=>{
+app.get("/usuarios", (req, res) => {
+  db.collection("users")
+    .get() // Coge todo lo que hay en la base de datos de Users
+    .then(
+      // Aqui te devuelvo todo lo que me has pedido
+      (querySnapshot) => {
+        // Haz lo que quieras con toda la data que te he devuelto;
 
-  // Cargo el dato de la base de datos
-  db.find({}, function (err, docs) {
-    // Una vez lo he cargado, lo logueo
-    console.log('all data', docs)
+        // Defino un array vacio donde voy a meter todos los objetos de Usuarios
+      const usuarios = [];
+      querySnapshot.forEach((doc) => {
+        // En cada iteración le introduzco el objeto con los datos al array usuarios
+        usuarios.push( doc.data() );
+      });
+      // El objeto res (o reponse ) se encarga de todo lo relativo al a respuesta
+      res.send(usuarios);
+    });
+}   
 
-    // Acto seguido, lo devuelvo al cliente (quien me ha hecho la petición.)
-    res.send(docs)
-  });
-})
+);
 
 // El metodo .listen() sirve para inicializar el servidor.
 app.listen(port, () => {
+  console.log('puerto funcionando')
 });

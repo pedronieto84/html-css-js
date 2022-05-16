@@ -4,6 +4,7 @@
   "environment": {
     "node": "16.15.0"
   },
+  
   "description": "Curso de la cambra de comerç de Javascript html y css",
   "main": "index.js",
   "scripts": {
@@ -23,7 +24,8 @@
   "dependencies": {
     "connect-livereload": "^0.6.1",
     "express": "^4.18.1",
-    "firebase": "^8.10.1"
+    "firebase": "^8.10.1",
+    "firebase-admin": "^10.2.0"
   },
   "devDependencies": {
     "livereload": "^0.9.3",
