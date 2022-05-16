@@ -4,7 +4,6 @@ const port = 3000;
 
 app.use(express.json())
 
-
 app.post('/alta-usuario', ( req, res ) => {
   console.log('usuario', req.body)
   res.send(req.body)
