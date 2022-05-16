@@ -23,7 +23,7 @@ const port = 3000;
 app.use(express.json());
 
 // Ejemplo de una ruta GET, que me sirve para cargar los datos.
-app.get("/usuarios-mayores-edad", (req, res) => {
+app.get("/usuarios-nombres", (req, res) => {
   db.collection("users")
     .get() // Coge todo lo que hay en la base de datos de Users
     .then(
@@ -36,13 +36,11 @@ app.get("/usuarios-mayores-edad", (req, res) => {
           // En cada iteración le introduzco el objeto con los datos al array usuarios
           usuarios.push(doc.data());
         });
-        const filtradaData = usuarios.filter(( user )=> {
-          const edadDeseada = 18
-          const edadDeEsteUsuario = user.edad
-          return ( edadDeEsteUsuario >= edadDeseada )
+        const nombres = usuarios.map(( user )=> {
+          return user.name
         })
         // El objeto res (o reponse ) se encarga de todo lo relativo al a respuesta
-        res.send(filtradaData);
+        res.send(nombres);
       }
     );
 });
