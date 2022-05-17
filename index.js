@@ -1,14 +1,53 @@
-const express = require("express");
-const app = express();
-const port = 3000;
+let resultado = 32
+const promesa = (resultado) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log('2 segundos')
+            if(resultado >= 18){
+                resolve("succes suprimo")
+            }else{
+                reject('erroneo')
+            }
+            
+        }, 2000)
+    })
+}
+promesa(resultado);
 
-app.use(express.json())
+/*
+// Definir una promesa
 
-app.post('/alta-usuario', ( req, res ) => {
-  console.log('usuario', req.body)
-  res.send(req.body)
+const promesa = (resultado) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log('3 segundos')
+            if(resultado){
+                resolve( {usuario: 'Luis'} )
+            }else{
+                reject('ha habido un error')
+            }
+            
+        }, 3000)
+    })
+}
+
+// Consumir una promesa
+promesa(false)
+// EL then se ejecuta cuando en la definición de la promesa se llama al resolve()
+.then((res)=>{
+    console.log('respuesta de la promesa', res)
+    return 'hola'
 })
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+.then((res)=>{
+    // Puedo concatenar varios then, y el return de un then, lo consume el otro recibiendolo como parametro
+    console.log('recibo del then anterior', res)
+})
+.catch((e)=>{
+    // Lo que sea erroneo, pasará por aquí
+    console.error('error que me devuelve la promesa', e)
+})
+.finally((res)=>{
+    // El finally se ejecuta siempre
+    console.log('finally')
+})
+    */
