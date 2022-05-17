@@ -9,7 +9,7 @@ const promise = (number) => {
   return new Promise ((resolve, reject)=>{
     setTimeout(()=>{
       console.log('2 segundos')
-      if (number > 18){
+      if (number >= 18){
         resolve ( 'usuario mayor de edad')
       } else {
         reject ('usuario menor de edad')
@@ -18,3 +18,11 @@ const promise = (number) => {
   })
 }
 
+promise(17)
+.then ((res)=>{
+  console.log(res)
+  return 
+})
+.catch((rej)=>{
+  console.error(rej)
+})
