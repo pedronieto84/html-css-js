@@ -1,13 +1,39 @@
-// Arrays
+// Definir una promesa
+
+const promesa = (resultado) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log('3 segundos')
+            if(resultado){
+                resolve( {usuario: 'Luis'} )
+            }else{
+                reject('ha habido un error')
+            }
+            
+        }, 3000)
+    })
+}
+
+// Consumir una promesa
+promesa(false)
+// EL then se ejecuta cuando en la definición de la promesa se llama al resolve()
+.then((res)=>{
+    console.log('respuesta de la promesa', res)
+    return 'hola'
+})
+.then((res)=>{
+    // Puedo concatenar varios then, y el return de un then, lo consume el otro recibiendolo como parametro
+    console.log('recibo del then anterior', res)
+})
+.catch((e)=>{
+    // Lo que sea erroneo, pasará por aquí
+    console.error('error que me devuelve la promesa', e)
+})
+.finally((res)=>{
+    // El finally se ejecuta siempre
+    console.log('finally')
+})
 
 
-const arrayDeObjetos = [
-    { nombre: 'Pedro', edad: 38 }, 
-    { nombre: 'Luis', edad: 45 }, 
-    { nombre: 'Laura', edad: 26 }, 
-    { nombre: 'Cristina', edad: 17}
-]
 
-// Para acceder a un elemento de un array utilizo esta sintaxis INdice siempre es 0
 
-const usuarioLaura = arrayDeObjetos[2]
