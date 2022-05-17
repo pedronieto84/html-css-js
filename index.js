@@ -6,32 +6,27 @@ const Promesa = (edad) => {
       setTimeout (
         ()=>{
           if (edad > 18) {
-            
+            resolve ({mensaje: "eres mayor de edad"})
+          
+          } else {
+            reject ("eres menor de edad")
           }
         }
-        
         , 2000)
-
     } 
   ) 
-
-  
 }
 
 // Consumir una promesa
-promesa(false)
+Promesa (20)
 // EL then se ejecuta cuando en la definición de la promesa se llama al resolve()
 .then((res)=>{
-  console.log('respuesta de la promesa', res)
-  return 'hola'
+  console.log("bienvenido", res)
 })
-.then((res)=>{
-  // Puedo concatenar varios then, y el return de un then, lo consume el otro recibiendolo como parametro
-  console.log('recibo del then anterior', res)
-})
+
 .catch((e)=>{
   // Lo que sea erroneo, pasará por aquí
-  console.error('error que me devuelve la promesa', e)
+  console.error('no puedes entrar', e)
 })
 .finally((res)=>{
   // El finally se ejecuta siempre
