@@ -1,33 +1,31 @@
-const express = require('express')
-const app = express()
-const port = 3000
+//Definir promesa
+//Utilizar setTimeout de 2 segundos
+//parametro numero
+// numero menor a 18
+//rejectara errone fallara de lo contrario se resolvera succes
 
-app.get('/', (req, res) => {
-  res.send('YAESTAELNODEMON NO NO ')
-})
-app.get('/lunes', (req, res) => {
-  res.send('Lunes')
+const nuevaPromesa = (edadNumero) => {
+  return new Promise ((resolve,reject) => {
+    setTimeout (() => {
+      console.log ('Ha pasado el tiempo')
+      if (edadNumero <=18) {
+        resolve ('Es menor de edad')
+      } else {
+        reject ('Es mejor de edad')
+      }
+    }, 3000)
+
+  })
+
+}
+
+nuevaPromesa (14)
+
+.then ((resolve) => {
+  console.log (resolve)
+  return 
 })
 
-app.get('/martes', (req, res) => {
-  res.send('Martes')
-})
-
-app.get('/miercoles', (req, res) => {
-  res.send('Miercoles')
-})
-app.get('/jueves', (req, res) => {
-  res.send('Jueves')
-})
-app.get('/viernes', (req, res) => {
-  res.send('Viernes')
-})
-app.get('/adios-mundo', (req, res) => {
-  res.send('Adios Mundo!!!')
-})
-
-
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+.catch ((e) => {
+  console.error (e)
 })
