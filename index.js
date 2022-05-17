@@ -1,37 +1,24 @@
-// Definir una promesa
 
-const promesa = (resultado) => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log('3 segundos')
-            if(resultado){
-                resolve( {usuario: 'Luis'} )
-            }else{
-                reject('ha habido un error')
-            }
-            
-        }, 3000)
-    })
-}
+// Las promesas permiten que la ejecución del código sea más eficiente en términos de tiempo y me permite no tener que esperar a la resolución de
+// la logica anterior. 
 
-// Consumir una promesa
-promesa(false)
-// EL then se ejecuta cuando en la definición de la promesa se llama al resolve()
-.then((res)=>{
-    console.log('respuesta de la promesa', res)
-    return 'hola'
+mesa1().then(()=>{
+    // 1 
+    // cuando llegue el plato, les sirvo
 })
-.then((res)=>{
-    // Puedo concatenar varios then, y el return de un then, lo consume el otro recibiendolo como parametro
-    console.log('recibo del then anterior', res)
+mesa2().then(()=>{
+    // 5 segundos
+        // cuando llegue el plato de la 2 pues se lo sirvo
 })
-.catch((e)=>{
-    // Lo que sea erroneo, pasará por aquí
-    console.error('error que me devuelve la promesa', e)
+
+mesa3().then(()=>{
+    // 2 segundos
+    // cuando llegue el plato de la 2 pues se lo sirvo
 })
-.finally((res)=>{
-    // El finally se ejecuta siempre
-    console.log('finally')
+
+mesa4().then(()=>{
+    // 4 segundos
+    // cuando llegue el plato de la 2 pues se lo sirvo
 })
 
 
