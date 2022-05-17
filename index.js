@@ -1,14 +1,15 @@
-const express = require("express");
-const app = express();
-const port = 3000;
 
-app.use(express.json())
+function verificarEdad(edad) {
+  return new Promise((res, err) => {
+    setTimeout(function() {
+      if( edad >= 18 ) res(true);
+      else err(false);
+    }, 2000);
+  });
+};
 
-app.post('/alta-usuario', ( req, res ) => {
-  console.log('usuario', req.body);
-  res.send(req.body);
-})
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+verificarEdad(19).then(() => {
+  console.log("Es mayor de edad");
+}).catch(() => {
+  console.log("No es un mayor de edad");
 });
