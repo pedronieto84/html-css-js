@@ -1,22 +1,25 @@
-const objetoAnidadoComplejo = {
-    user: {
-      email: {
-        item: [
-          {
-            email: "adfasdfas",
-            password: "adfasdfad",
-            item: [
-              "adfadfasdf",
-              12312312,
-              "adsfasdfad",
-              ["adsfasdf", [{ email: "pedro.nieto.sanchez@gmail.com" }]],
-            ],
-          },
-        ],
-      },
-    },
-  };
+const promise = (number) => {
+  return new Promise((resolve, reject) => {
+      setTimeout(() => {
+          if(number >= 18){
+              resolve("Usuario mayor de 18")
+          }else{
+              reject("Error")
+          }
+          
+      }, 2000)
+  })
+}
 
-const accederAlObjeto = objetoAnidadoComplejo.user.email.item[0].item[3][1][0].email
+promise(17)
+.then((res)=>{
+  console.log(res)
+  return
+})
+.catch((rej)=>{
+  console.error(rej)
+})
 
-console.log(accederAlObjeto)
+
+
+
