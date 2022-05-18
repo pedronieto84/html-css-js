@@ -13,7 +13,7 @@ const nuevaPromesa = (edadNumero) => {
       } else {
         reject ('Es mejor de edad')
       }
-    }, 3000)
+    }, 5300)
 
   })
 
