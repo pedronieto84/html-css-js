@@ -1,18 +1,33 @@
-// Objeto Math me permite utilizar una serie de metodos relativos a Matematicas.
+// Objetos con propiedades dinamicas.
 
-// Math.random me genera un numero aleatorio
-const random = Math.random()
-console.log('numero aleatorio', random)
+// Esto es un objeto estatico
+const usuario = { nombre: 'Pedro', edad: 39 } 
 
-// Para redondear, el Math.round()
-const numero = 3.6
-const redondeo = Math.round(numero)
-console.log('redondeo ', redondeo)
+// Acceder de forma dinamica a una propiedad
+const propiedad = 'ciudad'
+usuario[propiedad] = "Terrassa" // usuario.ciudad = "Terrassa"
 
-// Para redondear al alza es el ceil, para redondear ala baja es el floor...
+console.log(usuario)
 
 
+// Ejemplo de uso de propiedades dinamicas
+const arrayDeString = ["hola", "hola", "hola", "hola", "hola", "adios", "gatos"]
+// Inicializo un objeto vacio
 
+const iteraciones = {}
+
+arrayDeString.forEach((palabra)=>{
+    if(iteraciones[palabra] === undefined){
+        // Inicializo el objeto anidado de la palabra en cuestión, que ahora es hola
+        iteraciones[palabra] = {
+            texto: palabra,
+            repeticiones: 1
+        }
+    }else{
+        iteraciones[palabra].repeticiones += 1
+    }
+})
+console.log('Iteraciones',iteraciones )
 
 
 
