@@ -1,33 +1,32 @@
-// Objetos con propiedades dinamicas.
+// ASYNC AWAIT Forma moderna de consumir PROMESAS
 
-// Esto es un objeto estatico
-const usuario = { nombre: 'Pedro', edad: 39 } 
+const promesa = (resultado) => {
+    return new Promise ((resolve , reject)=>{
+        setTimeout(() => {
+            if(resultado){
+                resolve({mensaje: 'Conexión exitosa'})
+            }else{
+                reject({mensaje: 'Conexión Erronea'})
+            }
+        }, 2000)
+       
+    })
+}
 
-// Acceder de forma dinamica a una propiedad
-const propiedad = 'ciudad'
-usuario[propiedad] = "Terrassa" // usuario.ciudad = "Terrassa"
+// Consumir una promesa con async await.
 
-console.log(usuario)
+(
 
+    async () => {
 
-// Ejemplo de uso de propiedades dinamicas
-const arrayDeString = ["hola", "hola", "hola", "hola", "hola", "adios", "gatos"]
-// Inicializo un objeto vacio
-
-const iteraciones = {}
-
-arrayDeString.forEach((palabra)=>{
-    if(iteraciones[palabra] === undefined){
-        // Inicializo el objeto anidado de la palabra en cuestión, que ahora es hola
-        iteraciones[palabra] = {
-            texto: palabra,
-            repeticiones: 1
+        try{
+            const res = await promesa(false)
+            console.log('res', res, res2)
+        }catch(e){
+            console.log('error', e)
         }
-    }else{
-        iteraciones[palabra].repeticiones += 1
+      
     }
-})
-console.log('Iteraciones',iteraciones )
 
-
+)()
 
