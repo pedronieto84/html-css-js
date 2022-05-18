@@ -5,12 +5,16 @@ const usuario = {
     edad: 38
 }
 
-// Como borrar una propiedad de un objeto
+// Metodos mas habituales de la keyword OBJECT.
 
-delete usuario.edad
 
-console.log(usuario)
+// EL keys me sirve para loguear las "keys"
+const keys = Object.keys(usuario)
+console.log('keys', keys);
 
+// El values me sirve para loguea los "valores"
+const values = Object.values(usuario)
+console.log('values', values)
 
 
 
