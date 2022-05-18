@@ -1,32 +1,17 @@
-// ASYNC AWAIT Forma moderna de consumir PROMESAS
 
-const promesa = (resultado) => {
-    return new Promise ((resolve , reject)=>{
-        setTimeout(() => {
-            if(resultado){
-                resolve({mensaje: 'Conexión exitosa'})
-            }else{
-                reject({mensaje: 'Conexión Erronea'})
-            }
-        }, 2000)
-       
-    })
+
+// Definición de una clase. Una clase es como un molde donde agrupo logica y codigo. 
+class Perro {
+
+ 
+    // Esto es un METODO dentro de un objeto
+    ladra(){
+        console.log('guau')
+    }
 }
 
-// Consumir una promesa con async await.
+// Instanciando la clase perro y genero el objeto tobby
+const tobby = new Perro()
 
-(
-
-    async () => {
-
-        try{
-            const res = await promesa(false)
-            console.log('res', res, res2)
-        }catch(e){
-            console.log('error', e)
-        }
-      
-    }
-
-)()
-
+// Llamo al metodo de tobby
+tobby.ladra()
